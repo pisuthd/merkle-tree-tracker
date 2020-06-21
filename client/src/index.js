@@ -12,23 +12,26 @@ import "font-awesome/css/font-awesome.min.css";
 
 import "./index.scss";
 import Spinner from "./components/spinner/spinner";
+import WalletProvider from "./hooks/wallet";
 
 const LazyApp = lazy(() => import("./app/app"));
 
 ReactDOM.render(
    <Provider store={store}>
-      <Suspense fallback={<Spinner />}>
-        <LazyApp />
-        <ReduxToastr
-            timeOut={4000}
-            newestOnTop={false}
-            preventDuplicates
-            position="top-left"
-            transitionIn="fadeIn"
-            transitionOut="fadeOut"
-            progressBar
-            closeOnToastrClick/>
-      </Suspense>
+      <WalletProvider>
+         <Suspense fallback={<Spinner />}>
+            <LazyApp />
+            <ReduxToastr
+               timeOut={4000}
+               newestOnTop={false}
+               preventDuplicates
+               position="top-left"
+               transitionIn="fadeIn"
+               transitionOut="fadeOut"
+               progressBar
+               closeOnToastrClick />
+         </Suspense>
+      </WalletProvider>
    </Provider>,
    document.getElementById("root")
 );
