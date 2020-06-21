@@ -25,10 +25,7 @@ import { Link } from "react-router-dom";
 import GoogleMapReact from 'google-map-react';
 import styled from "styled-components"
 import useAPI from "../../hooks/api"
-import MinimalStatistics from "../../components/cards/minimalStatisticsCard";
 import MinimalStatisticsBG from "../../components/cards/minimalStatisticsBGCard";
-import Actitivies from "../../containers/activities"
-import Notifications from "../../containers/notifications"
 import classnames from "classnames";
 
 import Marker from "../../components/marker";
@@ -144,83 +141,8 @@ const Home = () => {
                                 <Icon.LifeBuoy size={56} strokeWidth="1.3" color="#fff" />
                             </MinimalStatisticsBG>
                         </Col>
-
                     </Row>
 
-                     
-
-                    <Row>
-                        {/*
-
-                        <Col sm="12">
-                            <Nav tabs>
-                                <NavItem>
-                                    <NavLink
-                                        className={classnames({
-                                            active: activeTab === "1"
-                                        })}
-                                        onClick={() => {
-                                            toggle("1");
-                                        }}
-                                    >
-                                        Dashboard
-                                            </NavLink>
-                                </NavItem>
-                                
-                                <NavItem>
-                                    <NavLink
-                                        className={classnames({
-                                            active: activeTab === "2"
-                                        })}
-                                        onClick={() => {
-                                            toggle("2");
-                                        }}
-                                    >
-                                        Search for Contact Tracing
-                                        </NavLink>
-                                </NavItem>
-                               
-
-                            </Nav>
-                            <TabContent activeTab={activeTab}>
-                                <TabPane tabId="1">
-                                    Dashboard
-                                    <Actitivies />
-                                    <h4>Search for Contact Tracing</h4>
-                                    <Row>
-                                        <Col sm="6">
-                                            <h4>Tab 1 Contents</h4>
-                                            <p>Lemon drops pastry chocolate. Jujubes sweet roll tootsie roll. Oat cake donut bonbon chocolate croissant candy candy brownie. Wafer jelly beans jelly ice cream caramels. Cookie bonbon lemon drops cheesecake brownie cake macaroon sweet. Toffee pie icing candy ice cream croissant caramels jelly. Muffin jelly gummies icing cheesecake chocolate cake. Sweet chupa chups croissant pudding sesame snaps soufflé. Marzipan cotton candy jujubes halvah cheesecake. Cupcake wafer gummies croissant candy brownie jelly. Sweet wafer chocolate halvah.</p>
-                                        </Col>
-                                        <Col sm="6">
-                                            <div style={{ height: "calc(100vh - 250px)", width: "100%", marginTop: 20 }}>
-                                                <GoogleMapReact
-                                                    bootstrapURLKeys={{
-                                                        key: "AIzaSyBDkKetQwosod2SZ7ZGCpxuJdxY3kxo5Po"
-                                                    }}
-                                                    defaultCenter={center}
-                                                    defaultZoom={zoom}
-                                                    draggable={draggable}
-                                                    onChange={mapChange}
-                                                    onChildMouseDown={onCircleInteraction}
-                                                    onChildMouseMove={onCircleInteraction}
-                                                    onChildMouseUp={onCircleInteraction3}
-                                                >
-                                                    <Marker
-                                                        lat={position.lat}
-                                                        lng={position.lng}
-                                                        name="My Marker"
-                                                        color="blue"
-                                                    />
-                                                </GoogleMapReact>
-                                            </div>
-                                        </Col>
-                                    </Row>
-                                </TabPane>
-                            
-                            </TabContent>
-                        </Col>*/}
-                    </Row>
                     <h4 className="mt-4 mb-0 text-bold-400">Search for Contact Tracing</h4>
                     <Row style={{ marginTop: 20 }}>
                         <Col sm="6">
