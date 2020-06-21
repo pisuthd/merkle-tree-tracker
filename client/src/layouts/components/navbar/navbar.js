@@ -13,6 +13,7 @@ import {
    DropdownMenu,
    DropdownItem
 } from "reactstrap";
+import * as Icon from "react-feather";
 import PerfectScrollbar from "react-perfect-scrollbar";
 import {
    // Moon,
@@ -30,6 +31,7 @@ import {
    X,
    LogOut
 } from "react-feather";
+import MinimalStatistics from "../../../components/cards/minimalStatisticsCard"
 import NavbarSearch from "../../../components/search/Search";
 import ReactCountryFlag from "react-country-flag";
 
@@ -67,9 +69,21 @@ class ThemeNavbar extends Component {
                      onClick={this.handleClick.bind(this)}
                      data-toggle="collapse"
                   />
+                  <div style={{ display: "flex", flexDirection: "row" }}>
+                     <MinimalStatistics   statistics="23" statisticsColor="success" text="Users" iconSide="right">
+                        <Icon.User size={36} strokeWidth="1.3" className="success" />
+                     </MinimalStatistics>
+                     <MinimalStatistics statistics="577" statisticsColor="danger" text="Records 24h" iconSide="right">
+                        <Icon.Heart size={36} strokeWidth="1.3" className="danger" />
+                     </MinimalStatistics>
+                  </div>
+
+                  {/*
                   <Form className="navbar-form mt-1 float-left" role="search">
                      <NavbarSearch />
                   </Form>
+                  */}
+
                   {/* <Moon size={20} color="#333" className="m-2 cursor-pointer"/> */}
                   <MoreVertical
                      className="mt-1 navbar-toggler black no-border float-right"
@@ -81,6 +95,7 @@ class ThemeNavbar extends Component {
                <div className="navbar-container">
                   <Collapse isOpen={this.state.isOpen} navbar>
                      <Nav className="ml-auto float-right" navbar>
+
                         <UncontrolledDropdown nav inNavbar className="pr-1">
                            <DropdownToggle nav>
                               <ReactCountryFlag code="us" svg /> EN
@@ -89,17 +104,10 @@ class ThemeNavbar extends Component {
                               <DropdownItem>
                                  <ReactCountryFlag code="us" svg /> English
                               </DropdownItem>
-                              <DropdownItem>
-                                 <ReactCountryFlag code="fr" svg /> France
-                              </DropdownItem>
-                              <DropdownItem>
-                                 <ReactCountryFlag code="es" svg /> Spanish
-                              </DropdownItem>
-                              <DropdownItem>
-                                 <ReactCountryFlag code="cn" svg /> Chinese
-                              </DropdownItem>
                            </DropdownMenu>
                         </UncontrolledDropdown>
+                        {/*
+                        
                         <NavItem className="pr-1">
                            <Link to="/email/" className="nav-link">
                               <Mail size={20} color="#333" />
@@ -278,6 +286,7 @@ class ThemeNavbar extends Component {
                               </Link>
                            </DropdownMenu>
                         </UncontrolledDropdown>
+                        */}
                      </Nav>
                   </Collapse>
                </div>

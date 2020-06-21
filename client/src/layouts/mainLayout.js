@@ -72,10 +72,14 @@ class MainLayout extends PureComponent {
                            handleSidebarSize={this.handleSidebarSize.bind(this)}
                            handleLayout={this.handleLayout.bind(this)}
                         />
+                        {/*
                         <Navbar
                            toggleSidebarMenu={this.toggleSidebarMenu.bind(this)}
                            sidebarState={this.state.sidebarState}
                         />
+                        */}
+                        
+                        
                         <main>{this.props.children}</main>
                         <Footer />
                      </div>

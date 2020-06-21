@@ -133,7 +133,7 @@ class NavbarSearch extends Component {
                id="search-term"
                type="text"
                className="form-control round"
-               placeholder="Try quick search"
+               placeholder="Search by Public Key"
                onChange={this.handleChange}
                value={searchTerm}
             />
