@@ -1,0 +1,11 @@
+{
+    "name": "merkle-tree-tracker",
+    "main": "index.js",
+    "dependencies": {
+        "@pulumi/aws": "^2.9.1",
+        "@pulumi/awsx": "^0.20.0",
+        "@pulumi/pulumi": "^2.0.0",
+        "merkletreejs": "^0.2.8",
+        "mime": "^2.4.6"
+    }
+}
