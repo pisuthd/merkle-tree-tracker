@@ -148,7 +148,9 @@ exports.search = async (event, TableName) => {
         const proof = tree.getProof(target);
         
         if (tree.verify(proof, target, root)) {
-            users.push(user.publicKey)
+            if (users.indexOf(user.publicKey) === -1) {
+                users.push(user.publicKey)
+            }
         }
     }
 
