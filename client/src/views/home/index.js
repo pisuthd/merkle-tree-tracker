@@ -278,13 +278,15 @@ const Home = () => {
                                                 <Input type="textarea" disabled value={result} style={{ fontSize: 12 }} id="basictextarea" rows="8" name="basictextarea" />
                                             </Col>
                                         </FormGroup>
+                                        {/*
+                                        
                                         <FormGroup row>
                                             <Col sm={2}>{` `}</Col>
                                             <Col sm={4}>
                                                 <Button disabled={false} onClick={{}} color="danger">Notify All</Button>{` `}
                                                 <Button disabled={false} onClick={{}} color="secondary">Clear</Button>{` `}
                                             </Col>
-                                        </FormGroup>
+                                        </FormGroup>*/}
 
                                     </div>
                                 </Form>
