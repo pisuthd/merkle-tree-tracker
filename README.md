@@ -2,6 +2,24 @@
 
 A privacy-preserved IoT tracking device that make use of AWS managed services include AWS IoT Core and Serverless.
 
+For the public: Privacy-First
+- Protect the public’s privacy and health 
+- Dispel concerns about personal data leakage
+- Build a tool for the public to tracking their Covid-19 exposure
+
+For the government: Better notification system
+- Increase the usage by this new proof-of-health verification 
+- Build a better system for the government
+- Help the government build a Covid-19 database while show respect for people’s privacy
+
+# Zero Knowledge Covid-19 Notification is offering the solution
+- No user data is send to server
+- User get virus notification without revealing their identity
+- Embedded hardware to integrate to all location sharing device
+
+
+# Architecture diagram
+
 ![digram][diagram]
 
 [diagram]: https://d36kpcgjcb00m3.cloudfront.net/images/tracker-1.png "Diagram"
