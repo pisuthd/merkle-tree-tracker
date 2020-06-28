@@ -3,12 +3,12 @@
 A privacy-preserved IoT tracking device that make use of AWS managed services include AWS IoT Core and Serverless.
 
 For the public: Privacy-First
-- Protect the public’s privacy and health 
+- Protect the public’s privacy and health
 - Dispel concerns about personal data leakage
-- Build a tool for the public to tracking their Covid-19 exposure
+- Build a tool for the public to notify their Covid-19 exposure
 
 For the government: Better notification system
-- Increase the usage by this new proof-of-health verification 
+- Increase the usage by this new proof-of-health verification
 - Build a better system for the government
 - Help the government build a Covid-19 database while show respect for people’s privacy
 
@@ -16,6 +16,10 @@ For the government: Better notification system
 - No user data is send to server
 - User get virus notification without revealing their identity
 - Embedded hardware to integrate to all location sharing device
+
+![mockup][mockup]
+
+[mockup]: https://i.imgur.com/lBwS0Qt.png "mockup"
 
 
 # Architecture diagram
@@ -35,7 +39,7 @@ pulumi up
 This will setup Lambda, DynamoDB and API Gateway then you can run the client application from /client folder with:
 
 ```
-yarn 
+yarn
 yarn start
 ```
 Don't forget to change API_URL that provisioned from the deployment stage on a constant file.
@@ -52,6 +56,9 @@ This wiring can be found in [here](https://iotdesignpro.com/projects/nodemcu-esp
 
 ## Live Demo
 
-https://d36kpcgjcb00m3.cloudfront.net 
+https://d36kpcgjcb00m3.cloudfront.net
 
 The app contains a generate proof screen that allows to input data into the system without the need of the IoT device.
+
+## Extra reading material
+[Merkle tree tracker slide](https://www.slideshare.net/NAPATCHARUPHANT/merkle-tree-tracker "Merkle tree tracker")
