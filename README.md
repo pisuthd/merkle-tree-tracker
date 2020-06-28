@@ -73,9 +73,7 @@ Example Origin : 13.910114339, 100.60267145296
 
 * Degree of pecision is based on the equator. (Thailand for example)
 
-DynamoDB stores only the roof (verifying the whole dataset is authentic) and leaves (hashes of GPS coordinates in 6 orders) of the Merkle Tree. 
-
-We can find contact tracking by generate the new Merkle tree from the exact location to compares with all leaves in the DB, if matched mean the owner of the leaf was in the area according to the accuaracy of its leaf.
+DynamoDB stores only the roof (verifying the whole dataset is authentic) and leaves (hashes of GPS coordinates in 6 orders) of the Merkle Tree.  We can find contact tracing by generate the new Merkle tree from the exact location then compares with all leaves in the DB, if matched mean the owner (shown in public key) of the leaf was in the area according to the order of its leaf.
 
 
 ## Live Demo
