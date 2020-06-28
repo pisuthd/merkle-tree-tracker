@@ -52,7 +52,7 @@ The hardware tracking device is used in conjunction with:
 * ESP8266 NodeMCU v.3
 * Ublox NEO-6M GPS Module
 
-This wiring can be found in [here](https://iotdesignpro.com/projects/nodemcu-esp8266-gps-module-interfacing-to-display-latitude-and-longitude). And the source code is resided in /arduino folder , SSL certificates must be uploaded to the board to made it able to connect with AWS IoT Core as [this intruction](https://electronicsinnovation.com/how-to-connect-nodemcu-esp8266-with-aws-iot-core-using-arduino-ide-mqtt/).
+This wiring can be found in [here](https://iotdesignpro.com/projects/nodemcu-esp8266-gps-module-interfacing-to-display-latitude-and-longitude). And the source code is resided in /arduino folder , SSL certificates must be uploaded to the board to made it able to connect with AWS IoT Core as [this instruction](https://electronicsinnovation.com/how-to-connect-nodemcu-esp8266-with-aws-iot-core-using-arduino-ide-mqtt/).
 
 The prototype hardware doesn't generate the merkle tree proof inside the hardware by rather rely on the lambda proxy that you can find at /arduino/lambda.js to being collected the gps coordinates and transform into merkle tree.
 
