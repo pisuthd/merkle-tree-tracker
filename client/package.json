@@ -3,7 +3,7 @@
    "version": "0.1.0",
    "private": true,
    "dependencies": {
-      "axios": "^0.19.2",
+      "axios": "^0.21.1",
       "bootstrap": "^4.1.3",
       "chance": "^1.0.16",
       "chart.js": "^2.7.2",
